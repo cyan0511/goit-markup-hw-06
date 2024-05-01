@@ -318,8 +318,8 @@
                 </p>
             </div>
 
-            <div>
-                <p class="footer-social-media">Social media</p>
+            <div class="footer-socials">
+                <p class="footer-label">Social media</p>
                 <ul class="footer-list list">
                     <li class="footer-social-item">
                         <a href="#" class="footer-social-link">
@@ -343,6 +343,17 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer-form">
+                <p class="footer-label">Subscribe</p>
+                <form name="subscribe-form" autocomplete="on" class="form">
+                    <input type="email" name="email" placeholder="E-mail" class="footer-form-input" required="">
+                    <button type="submit" class="footer-form-button footer-socials-text-add">
+                        Subscribe
+                        <span class="icon send"></span>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal="">
@@ -350,6 +361,60 @@
             <button type="button" class="modal-close" data-modal-close="">
                 <span class="icon close"></span>
             </button>
+            <p class="form-header">Leave your contacts and we will call you back</p>
+            <form autocomplete="on" class="form-container">
+                <div class="positioning">
+                    <label for="user-name" class="form-order-label">
+                        <span class="form-label-text">Name</span>
+                    </label>
+                    <div class="input-icon">
+                        <input id="user-name" type="text" class="form-input" name="user-name" placeholder="Full Name"
+                            required="">
+                        <span class="icon person"></span>
+                    </div>
+                </div>
+                <div class="positioning">
+                    <label class="form-order-label">
+                        <span class="form-label-text">Phone</span>
+                    </label>
+                    <div class="input-icon">
+                        <input id="telephone" type="tel" class="form-input" name="phone-number"
+                            placeholder="Your Contact Number" required="">
+                        <span class="icon phone"></span>
+                    </div>
+                </div>
+                <div class="positioning">
+                    <label class="form-order-label">
+                        <span class="form-label-text">Email</span>
+                    </label>
+                    <div class="input-icon">
+                        <input id="email" type="email" class="form-input" name="email-add"
+                            placeholder="Your E-mail Address" required="">
+                        <span class="icon email"></span>
+                    </div>
+                </div>
+                <div class="commitment">
+                    <label for="user-comment" class="form-order-label">
+                        <span class="form-label-text">Comment</span>
+                    </label>
+                    <textarea id="user-comment" name="user-comment" class="form-textarea" placeholder="Text input"
+                        required=""></textarea>
+                </div>
+                <div class="terms-conditions">
+                    <input id="user-privacy" type="checkbox" value="true" name="user-privacy"
+                        class="checkbox visually-hidden" required="">
+                    <label for="user-privacy" class="form-agree-box">
+                        <span class="check-mark">
+                            <span class="icon checkbox"></span>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a href="#" class="form-agree-box-link">Privacy Policy </a>
+                    </label>
+                </div>
+                <!-- <div class="form-button_container"> -->
+                <button type="submit" class="form-button">Send</button>
+            </form>
+
         </div>
     </div>
     <script src="./js/scripts.js"></script>
